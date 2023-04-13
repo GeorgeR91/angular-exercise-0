@@ -1,0 +1,15 @@
+<div class="container w-50 mt-4 p-4 border border-2 border-primary">
+  <div class="row border border-2 border-primary">
+    <app-user-input (newWord)="onNewWord($event)"></app-user-input>
+  </div>
+  <div class="row mt-4 gap-4">
+    <div class="col border border-2 border-primary">
+      <app-odd-length-words [wordList]="oddLengthWords"></app-odd-length-words>
+    </div>
+    <div class="col border border-2 border-primary">
+      <app-even-length-words
+        [wordList]="evenLengthWords"
+      ></app-even-length-words>
+    </div>
+  </div>
+</div>
